@@ -1,0 +1,21 @@
+{
+  "name": "paguegono",
+  "version": "1.0.0",
+  "description": "paguegonoapp",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "dev": "vite build --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/daniel7lizarazo/paguegono"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "htmx.org": "^1.9.10",
+    "vite": "^5.0.10"
+  }
+}
