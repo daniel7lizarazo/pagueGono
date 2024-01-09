@@ -5,10 +5,12 @@ import (
 	"log"
 
 	"github.com/daniel7lizarazo/pagueGono/internal/app"
+	dataBase "github.com/daniel7lizarazo/pagueGono/internal/database"
 	"github.com/daniel7lizarazo/pagueGono/internal/transport"
 )
 
 func main() {
+	dataBase.InitializeDB()
 	transport.AddHandlers()
 	app.InitializeApp()
 	log.Print("Corriendo from logger")

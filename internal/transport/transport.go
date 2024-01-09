@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"net/http"
 	"text/template"
+
+	dataBase "github.com/daniel7lizarazo/pagueGono/internal/database"
 )
 
 func AddHandlers() {
@@ -25,4 +27,5 @@ func loginPage(w http.ResponseWriter, r *http.Request) {
 
 func prueba(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("entró a prueba")
+	dataBase.TestDb()
 }
