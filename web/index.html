@@ -6,8 +6,27 @@
     <title>PagueGono</title>
     <script src="/static/htmx.min.js" type="text/javascript"></script>
 </head>
-<body hx-get="/loginPage">
-    <h1>hola mundo cruel</h1>
-    <button hx-get="/prueba">tocame</button>
-</body>
+<body>
+    <section name="login" hx-get="/loginPage" hx-trigger="load"></section>
+    <h2>login</h2>
+    <form name="login">
+        <label for="user">
+            <input type="text" name="user" id="user">
+        </label>
+        <label for="password">
+            <input type="password" name="password" id="password">
+        </label>
+        <button hx-post="/login">login</button>
+    </form>
+    <h2>Register</h2>
+    <form name="register">
+        <label for="userReg">
+            <input type="text" name="user" id="user">
+        </label>
+        <label for="passwordReg">
+            <input type="password" name="password" id="password">
+        </label>
+        <button>login</button>
+    </form>
+    </body>
 </html>
