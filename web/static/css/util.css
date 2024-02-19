@@ -1,0 +1,55 @@
+/* Variables */
+:root {
+    --main-amarillo: hsla(37, 98%, 53%, 100%);
+    --main-azul: hsla(221, 51%, 16%, 100%);
+    --main-blanco: hsla(0, 0%, 100%, 100%);
+    --main-negro: hsla(0, 0%, 0%, 100%);
+    --seconday-blanco: hsla(0, 0%, 90%, 100%);
+}
+/* Variables */
+
+/* Fonts */
+@font-face {
+    font-family: 'Bitter';
+    src: 
+        url(../fonts/Bitter-VariableFont_wght.ttf),
+        url(../fonts/Bitter-Italic-VariableFont_wght.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space-mono';
+    src: 
+        url(../fonts/SpaceMono-Regular.ttf),
+        url(../fonts/SpaceMono-Bold.ttf),
+        url(../fonts/SpaceMono-Italic.ttf),
+        url(../fonts/SpaceMono-BoldItalic.ttf);
+    font-display: swap;
+}
+/* Fonts */
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+    font-family: 'Space-mono', sans-serif;
+}
+
+body {
+    min-height: 100dvh;
+    color: var(--main-negro);
+}
+
+h1, h2, h3, h4 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+::placeholder{
+    color: var(--seconday-blanco);
+}
+/* Reset */

@@ -1,6 +1,6 @@
-package main
+package models
 
 type UserLoginInfo struct {
-	user     string
-	password string
+	Email    string
+	Password string
 }
